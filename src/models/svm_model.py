@@ -20,7 +20,7 @@ class SVMModel(BaseModel):
             'gamma': params.get('gamma', 'scale'),
             'probability': True,  # 必须开启以支持概率预测
             'random_state': self.random_state,
-            'max_iter': 10000,  # 增加迭代次数，配合StandardScaler使用
+            'max_iter': params.get('max_iter', 10000),  # 增加迭代次数，配合StandardScaler使用
         }
         
         # 如果是poly核，添加degree参数

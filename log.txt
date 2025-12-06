@@ -1,0 +1,2711 @@
+williamxn@LAPTOP-2A3BUBD5:~/5003-Final-Project$ python run_smac_hpo.py
+INFO:__main__:Loading data...
+INFO:__main__:Starting HPO for lightgbm...
+INFO:src.hpo.base_hpo:已加载模型 'lightgbm' 的搜索空间，包含 9 个超参数
+INFO:src.hpo.base_hpo:初始化 SMAC3HyperbandOptimizer
+INFO:src.hpo.base_hpo:模型: lightgbm, n_trials=50, cv_folds=5
+[INFO][abstract_initial_design.py:87] Reducing the number of initial configurations from 80 to 12 (max_ratio == 0.25).
+[INFO][abstract_initial_design.py:139] Using 12 initial design configurations and 0 additional configurations.
+[INFO][abstract_intensifier.py:307] Using only one seed for deterministic scenario.
+[INFO][successive_halving.py:164] Successive Halving uses budget type BUDGETS with eta 3, min budget 20, and max budget 500.
+[INFO][successive_halving.py:323] Number of configs in stage:
+[INFO][successive_halving.py:325] --- Bracket 0: [9, 3, 1]
+[INFO][successive_halving.py:325] --- Bracket 1: [5, 1]
+[INFO][successive_halving.py:325] --- Bracket 2: [3]
+[INFO][successive_halving.py:327] Budgets in stage:
+[INFO][successive_halving.py:329] --- Bracket 0: [55.55555555555555, 166.66666666666666, 500.0]
+[INFO][successive_halving.py:329] --- Bracket 1: [166.66666666666666, 500.0]
+[INFO][successive_halving.py:329] --- Bracket 2: [500.0]
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.1912   valid's multi_logloss: 1.62207
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.19186  valid's multi_logloss: 1.61871
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.19405  valid's multi_logloss: 1.60321
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.19978  valid's multi_logloss: 1.59256
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.19678  valid's multi_logloss: 1.61794
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.622067', '1.618712', '1.603207', '1.592561', '1.617941']
+[INFO][base_model.py:143] 平均得分: 1.610897 ± 0.011232
+[INFO][base_model.py:144] OOF得分: 1.610900
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:517] Added config 0585ae as new incumbent because there are no incumbents yet.
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43542  valid's multi_logloss: 1.67688
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43398  valid's multi_logloss: 1.66693
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43535  valid's multi_logloss: 1.65234
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.439    valid's multi_logloss: 1.65203
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43302  valid's multi_logloss: 1.67017
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.676884', '1.666930', '1.652336', '1.652035', '1.670170']
+[INFO][base_model.py:143] 平均得分: 1.663671 ± 0.009913
+[INFO][base_model.py:144] OOF得分: 1.663674
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.686116 valid's multi_logloss: 1.41907
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.689748 valid's multi_logloss: 1.39767
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.689075 valid's multi_logloss: 1.39969
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.694197 valid's multi_logloss: 1.38185
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.678751 valid's multi_logloss: 1.42386
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.419067', '1.397666', '1.399692', '1.381845', '1.423860']
+[INFO][base_model.py:143] 平均得分: 1.404426 ± 0.015297
+[INFO][base_model.py:144] OOF得分: 1.404430
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config f0e8c6 and rejected config 0585ae as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.372463 valid's multi_logloss: 1.42272
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.370344 valid's multi_logloss: 1.4372
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.373136 valid's multi_logloss: 1.4032
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.373239 valid's multi_logloss: 1.37986
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.371134 valid's multi_logloss: 1.42473
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.422720', '1.437203', '1.403198', '1.379860', '1.424731']
+[INFO][base_model.py:143] 平均得分: 1.413542 ± 0.020054
+[INFO][base_model.py:144] OOF得分: 1.413545
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[54]    train's multi_logloss: 0.312676 valid's multi_logloss: 1.40021
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[54]    train's multi_logloss: 0.31608  valid's multi_logloss: 1.43898
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[54]    train's multi_logloss: 0.314205 valid's multi_logloss: 1.41123
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.311861 valid's multi_logloss: 1.37878
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[54]    train's multi_logloss: 0.313242 valid's multi_logloss: 1.42178
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.400206', '1.438985', '1.411231', '1.378784', '1.421776']
+[INFO][base_model.py:143] 平均得分: 1.410196 ± 0.020251
+[INFO][base_model.py:144] OOF得分: 1.410194
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.295583 valid's multi_logloss: 1.41458
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.310307 valid's multi_logloss: 1.43169
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.317487 valid's multi_logloss: 1.40283
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.304434 valid's multi_logloss: 1.36418
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[53]    train's multi_logloss: 0.31797  valid's multi_logloss: 1.41654
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.414581', '1.431689', '1.402832', '1.364177', '1.416536']
+[INFO][base_model.py:143] 平均得分: 1.405963 ± 0.022820
+[INFO][base_model.py:144] OOF得分: 1.405965
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[52]    train's multi_logloss: 0.527153 valid's multi_logloss: 1.3866
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[53]    train's multi_logloss: 0.525544 valid's multi_logloss: 1.40623
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.515049 valid's multi_logloss: 1.39997
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[49]    train's multi_logloss: 0.578127 valid's multi_logloss: 1.36513
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[52]    train's multi_logloss: 0.532087 valid's multi_logloss: 1.41695
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.386595', '1.406232', '1.399974', '1.365130', '1.416951']
+[INFO][base_model.py:143] 平均得分: 1.394977 ± 0.017864
+[INFO][base_model.py:144] OOF得分: 1.394974
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 06cc23 and rejected config f0e8c6 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.26577  valid's multi_logloss: 1.60928
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.26374  valid's multi_logloss: 1.59532
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.26584  valid's multi_logloss: 1.58402
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.2708   valid's multi_logloss: 1.58177
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.26483  valid's multi_logloss: 1.59744
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.609277', '1.595318', '1.584019', '1.581775', '1.597444']
+[INFO][base_model.py:143] 平均得分: 1.593566 ± 0.009951
+[INFO][base_model.py:144] OOF得分: 1.593570
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.757811 valid's multi_logloss: 1.48579
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.75619  valid's multi_logloss: 1.48988
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.757726 valid's multi_logloss: 1.47194
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.76396  valid's multi_logloss: 1.45027
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.757713 valid's multi_logloss: 1.47436
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.485793', '1.489877', '1.471937', '1.450271', '1.474364']
+[INFO][base_model.py:143] 平均得分: 1.474448 ± 0.013839
+[INFO][base_model.py:144] OOF得分: 1.474451
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[71]    train's multi_logloss: 0.384336 valid's multi_logloss: 1.37803
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[78]    train's multi_logloss: 0.346446 valid's multi_logloss: 1.39173
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[61]    train's multi_logloss: 0.465186 valid's multi_logloss: 1.39475
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[70]    train's multi_logloss: 0.409716 valid's multi_logloss: 1.36197
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[52]    train's multi_logloss: 0.532087 valid's multi_logloss: 1.41695
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.378028', '1.391726', '1.394751', '1.361969', '1.416951']
+[INFO][base_model.py:143] 平均得分: 1.388685 ± 0.018288
+[INFO][base_model.py:144] OOF得分: 1.388682
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[81]    train's multi_logloss: 0.574235 valid's multi_logloss: 1.41133
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[88]    train's multi_logloss: 0.565316 valid's multi_logloss: 1.39238
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[72]    train's multi_logloss: 0.603512 valid's multi_logloss: 1.39312
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[73]    train's multi_logloss: 0.605065 valid's multi_logloss: 1.37176
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[65]    train's multi_logloss: 0.622811 valid's multi_logloss: 1.42096
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.411333', '1.392382', '1.393118', '1.371761', '1.420956']
+[INFO][base_model.py:143] 平均得分: 1.397910 ± 0.017021
+[INFO][base_model.py:144] OOF得分: 1.397914
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[81]    train's multi_logloss: 0.15984  valid's multi_logloss: 1.39615
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[64]    train's multi_logloss: 0.247961 valid's multi_logloss: 1.42804
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[64]    train's multi_logloss: 0.252905 valid's multi_logloss: 1.39727
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[101]   train's multi_logloss: 0.113848 valid's multi_logloss: 1.34409
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[64]    train's multi_logloss: 0.240668 valid's multi_logloss: 1.4139
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.396147', '1.428044', '1.397266', '1.344085', '1.413905']
+[INFO][base_model.py:143] 平均得分: 1.395890 ± 0.028440
+[INFO][base_model.py:144] OOF得分: 1.395890
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[71]    train's multi_logloss: 0.384336 valid's multi_logloss: 1.37803
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[78]    train's multi_logloss: 0.346446 valid's multi_logloss: 1.39173
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[61]    train's multi_logloss: 0.465186 valid's multi_logloss: 1.39475
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[70]    train's multi_logloss: 0.409716 valid's multi_logloss: 1.36197
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[52]    train's multi_logloss: 0.532087 valid's multi_logloss: 1.41695
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.378028', '1.391726', '1.394751', '1.361969', '1.416951']
+[INFO][base_model.py:143] 平均得分: 1.388685 ± 0.018288
+[INFO][base_model.py:144] OOF得分: 1.388682
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.919398 valid's multi_logloss: 1.46644
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.919047 valid's multi_logloss: 1.46096
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.919112 valid's multi_logloss: 1.44318
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.920875 valid's multi_logloss: 1.43487
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.920602 valid's multi_logloss: 1.46287
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.466442', '1.460958', '1.443183', '1.434869', '1.462871']
+[INFO][base_model.py:143] 平均得分: 1.453665 ± 0.012364
+[INFO][base_model.py:144] OOF得分: 1.453668
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[84]    train's multi_logloss: 0.280469 valid's multi_logloss: 1.40377
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[68]    train's multi_logloss: 0.326515 valid's multi_logloss: 1.40682
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[69]    train's multi_logloss: 0.323662 valid's multi_logloss: 1.39864
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[82]    train's multi_logloss: 0.287841 valid's multi_logloss: 1.36833
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[66]    train's multi_logloss: 0.332333 valid's multi_logloss: 1.40707
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.403768', '1.406822', '1.398644', '1.368331', '1.407069']
+[INFO][base_model.py:143] 平均得分: 1.396927 ± 0.014617
+[INFO][base_model.py:144] OOF得分: 1.396929
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 1.24028  valid's multi_logloss: 1.5347
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 1.24407  valid's multi_logloss: 1.52439
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 1.24619  valid's multi_logloss: 1.50795
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 1.24825  valid's multi_logloss: 1.5054
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 1.2425   valid's multi_logloss: 1.53525
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.534703', '1.524395', '1.507953', '1.505397', '1.535248']
+[INFO][base_model.py:143] 平均得分: 1.521539 ± 0.012763
+[INFO][base_model.py:144] OOF得分: 1.521542
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.652722 valid's multi_logloss: 1.43909
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.65013  valid's multi_logloss: 1.43963
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.653385 valid's multi_logloss: 1.41321
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.655245 valid's multi_logloss: 1.39351
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.650821 valid's multi_logloss: 1.43161
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.439093', '1.439634', '1.413214', '1.393511', '1.431605']
+[INFO][base_model.py:143] 平均得分: 1.423412 ± 0.017744
+[INFO][base_model.py:144] OOF得分: 1.423416
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[97]    train's multi_logloss: 0.396094 valid's multi_logloss: 1.37685
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[114]   train's multi_logloss: 0.328913 valid's multi_logloss: 1.39225
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.332961 valid's multi_logloss: 1.37422
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.336105 valid's multi_logloss: 1.35556
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[93]    train's multi_logloss: 0.408545 valid's multi_logloss: 1.42336
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.376849', '1.392248', '1.374225', '1.355556', '1.423364']
+[INFO][base_model.py:143] 平均得分: 1.384448 ± 0.022682
+[INFO][base_model.py:144] OOF得分: 1.384446
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config bf5755 and rejected config 06cc23 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[97]    train's multi_logloss: 0.396094 valid's multi_logloss: 1.37685
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[114]   train's multi_logloss: 0.328913 valid's multi_logloss: 1.39225
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.332961 valid's multi_logloss: 1.37422
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.336105 valid's multi_logloss: 1.35556
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[93]    train's multi_logloss: 0.408545 valid's multi_logloss: 1.42336
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.376849', '1.392248', '1.374225', '1.355556', '1.423364']
+[INFO][base_model.py:143] 平均得分: 1.384448 ± 0.022682
+[INFO][base_model.py:144] OOF得分: 1.384446
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.843021 valid's multi_logloss: 1.40927
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.861782 valid's multi_logloss: 1.42001
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.854614 valid's multi_logloss: 1.40284
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.857952 valid's multi_logloss: 1.39048
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.853205 valid's multi_logloss: 1.43178
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.409274', '1.420006', '1.402845', '1.390480', '1.431780']
+[INFO][base_model.py:143] 平均得分: 1.410877 ± 0.014166
+[INFO][base_model.py:144] OOF得分: 1.410877
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.876597 valid's multi_logloss: 1.40967
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.876342 valid's multi_logloss: 1.40976
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.881724 valid's multi_logloss: 1.40114
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.881188 valid's multi_logloss: 1.37616
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[500]   train's multi_logloss: 0.870163 valid's multi_logloss: 1.42677
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.409671', '1.409764', '1.401144', '1.376158', '1.426766']
+[INFO][base_model.py:143] 平均得分: 1.404701 ± 0.016520
+[INFO][base_model.py:144] OOF得分: 1.404702
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[316]   train's multi_logloss: 0.394949 valid's multi_logloss: 1.37859
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[269]   train's multi_logloss: 0.456648 valid's multi_logloss: 1.38668
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[251]   train's multi_logloss: 0.487438 valid's multi_logloss: 1.37525
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[325]   train's multi_logloss: 0.392067 valid's multi_logloss: 1.35199
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[228]   train's multi_logloss: 0.517314 valid's multi_logloss: 1.39598
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.378585', '1.386680', '1.375253', '1.351994', '1.395976']
+[INFO][base_model.py:143] 平均得分: 1.377698 ± 0.014712
+[INFO][base_model.py:144] OOF得分: 1.377698
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 8fb483 and rejected config bf5755 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.810945 valid's multi_logloss: 1.47061
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.809191 valid's multi_logloss: 1.46242
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.811824 valid's multi_logloss: 1.45253
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.8156   valid's multi_logloss: 1.43062
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.815695 valid's multi_logloss: 1.46559
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.470613', '1.462421', '1.452526', '1.430616', '1.465591']
+[INFO][base_model.py:143] 平均得分: 1.456353 ± 0.014160
+[INFO][base_model.py:144] OOF得分: 1.456357
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[28]    train's multi_logloss: 0.277857 valid's multi_logloss: 1.42852
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[27]    train's multi_logloss: 0.287446 valid's multi_logloss: 1.4393
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[23]    train's multi_logloss: 0.356834 valid's multi_logloss: 1.44544
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[24]    train's multi_logloss: 0.335735 valid's multi_logloss: 1.37286
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[28]    train's multi_logloss: 0.274128 valid's multi_logloss: 1.46472
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.428520', '1.439302', '1.445440', '1.372861', '1.464723']
+[INFO][base_model.py:143] 平均得分: 1.430169 ± 0.030976
+[INFO][base_model.py:144] OOF得分: 1.430169
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27429  valid's multi_logloss: 1.6096
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27228  valid's multi_logloss: 1.60226
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27343  valid's multi_logloss: 1.58706
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27918  valid's multi_logloss: 1.58443
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27061  valid's multi_logloss: 1.60155
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.609601', '1.602263', '1.587060', '1.584434', '1.601546']
+[INFO][base_model.py:143] 平均得分: 1.596981 ± 0.009631
+[INFO][base_model.py:144] OOF得分: 1.596984
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.62748  valid's multi_logloss: 1.39975
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.628021 valid's multi_logloss: 1.4217
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[53]    train's multi_logloss: 0.640465 valid's multi_logloss: 1.40726
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.634362 valid's multi_logloss: 1.39334
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.623964 valid's multi_logloss: 1.42284
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.399755', '1.421705', '1.407265', '1.393336', '1.422844']
+[INFO][base_model.py:143] 平均得分: 1.408981 ± 0.011721
+[INFO][base_model.py:144] OOF得分: 1.408978
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42828  valid's multi_logloss: 1.62146
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42957  valid's multi_logloss: 1.60762
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43426  valid's multi_logloss: 1.59706
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43351  valid's multi_logloss: 1.5948
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42604  valid's multi_logloss: 1.61455
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.621463', '1.607616', '1.597056', '1.594801', '1.614553']
+[INFO][base_model.py:143] 平均得分: 1.607098 ± 0.010142
+[INFO][base_model.py:144] OOF得分: 1.607101
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.452493 valid's multi_logloss: 1.40622
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.455485 valid's multi_logloss: 1.42648
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.460141 valid's multi_logloss: 1.39901
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.459497 valid's multi_logloss: 1.38069
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.452032 valid's multi_logloss: 1.41754
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.406220', '1.426475', '1.399006', '1.380693', '1.417537']
+[INFO][base_model.py:143] 平均得分: 1.405986 ± 0.015759
+[INFO][base_model.py:144] OOF得分: 1.405986
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.959586 valid's multi_logloss: 1.47823
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.961363 valid's multi_logloss: 1.47351
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.959641 valid's multi_logloss: 1.45752
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.962247 valid's multi_logloss: 1.44072
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 0.963719 valid's multi_logloss: 1.47457
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.478231', '1.473512', '1.457523', '1.440724', '1.474566']
+[INFO][base_model.py:143] 平均得分: 1.464911 ± 0.014030
+[INFO][base_model.py:144] OOF得分: 1.464915
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27901  valid's multi_logloss: 1.57015
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.27634  valid's multi_logloss: 1.55739
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.28633  valid's multi_logloss: 1.54856
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.28267  valid's multi_logloss: 1.53747
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.28245  valid's multi_logloss: 1.56262
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.570148', '1.557393', '1.548561', '1.537474', '1.562622']
+[INFO][base_model.py:143] 平均得分: 1.555240 ± 0.011328
+[INFO][base_model.py:144] OOF得分: 1.555243
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42214  valid's multi_logloss: 1.65559
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42328  valid's multi_logloss: 1.644
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.4274   valid's multi_logloss: 1.63446
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.42813  valid's multi_logloss: 1.62915
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.43067  valid's multi_logloss: 1.65021
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.655586', '1.644003', '1.634459', '1.629153', '1.650215']
+[INFO][base_model.py:143] 平均得分: 1.642683 ± 0.009753
+[INFO][base_model.py:144] OOF得分: 1.642687
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[102]   train's multi_logloss: 0.215299 valid's multi_logloss: 1.39023
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[102]   train's multi_logloss: 0.216057 valid's multi_logloss: 1.41614
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[109]   train's multi_logloss: 0.201243 valid's multi_logloss: 1.39301
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[114]   train's multi_logloss: 0.190961 valid's multi_logloss: 1.36063
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[84]    train's multi_logloss: 0.274816 valid's multi_logloss: 1.41537
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.390228', '1.416139', '1.393013', '1.360627', '1.415373']
+[INFO][base_model.py:143] 平均得分: 1.395076 ± 0.020347
+[INFO][base_model.py:144] OOF得分: 1.395075
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[71]    train's multi_logloss: 0.555776 valid's multi_logloss: 1.3941
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[76]    train's multi_logloss: 0.538682 valid's multi_logloss: 1.41788
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[88]    train's multi_logloss: 0.51898  valid's multi_logloss: 1.39871
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[75]    train's multi_logloss: 0.548125 valid's multi_logloss: 1.38234
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[72]    train's multi_logloss: 0.542997 valid's multi_logloss: 1.41622
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.394098', '1.417878', '1.398715', '1.382338', '1.416217']
+[INFO][base_model.py:143] 平均得分: 1.401849 ± 0.013520
+[INFO][base_model.py:144] OOF得分: 1.401847
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[28]    train's multi_logloss: 0.277857 valid's multi_logloss: 1.42852
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[27]    train's multi_logloss: 0.287446 valid's multi_logloss: 1.4393
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[23]    train's multi_logloss: 0.356834 valid's multi_logloss: 1.44544
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[24]    train's multi_logloss: 0.335735 valid's multi_logloss: 1.37286
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[28]    train's multi_logloss: 0.274128 valid's multi_logloss: 1.46472
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.428520', '1.439302', '1.445440', '1.372861', '1.464723']
+[INFO][base_model.py:143] 平均得分: 1.430169 ± 0.030976
+[INFO][base_model.py:144] OOF得分: 1.430169
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[102]   train's multi_logloss: 0.215299 valid's multi_logloss: 1.39023
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[102]   train's multi_logloss: 0.216057 valid's multi_logloss: 1.41614
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[109]   train's multi_logloss: 0.201243 valid's multi_logloss: 1.39301
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[114]   train's multi_logloss: 0.190961 valid's multi_logloss: 1.36063
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[84]    train's multi_logloss: 0.274816 valid's multi_logloss: 1.41537
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.390228', '1.416139', '1.393013', '1.360627', '1.415373']
+[INFO][base_model.py:143] 平均得分: 1.395076 ± 0.020347
+[INFO][base_model.py:144] OOF得分: 1.395075
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[156]   train's multi_logloss: 0.414462 valid's multi_logloss: 1.38909
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[132]   train's multi_logloss: 0.495407 valid's multi_logloss: 1.39045
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.572584 valid's multi_logloss: 1.37957
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[103]   train's multi_logloss: 0.614951 valid's multi_logloss: 1.36525
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[81]    train's multi_logloss: 0.715932 valid's multi_logloss: 1.4151
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.389086', '1.390455', '1.379567', '1.365252', '1.415097']
+[INFO][base_model.py:143] 平均得分: 1.387891 ± 0.016309
+[INFO][base_model.py:144] OOF得分: 1.387892
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.918804 valid's multi_logloss: 1.46261
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.916926 valid's multi_logloss: 1.45443
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.920111 valid's multi_logloss: 1.44035
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.922269 valid's multi_logloss: 1.42697
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[166]   train's multi_logloss: 0.921739 valid's multi_logloss: 1.45818
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.462605', '1.454432', '1.440349', '1.426967', '1.458178']
+[INFO][base_model.py:143] 平均得分: 1.448506 ± 0.013099
+[INFO][base_model.py:144] OOF得分: 1.448510
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[87]    train's multi_logloss: 0.379983 valid's multi_logloss: 1.40525
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[75]    train's multi_logloss: 0.427237 valid's multi_logloss: 1.3938
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[67]    train's multi_logloss: 0.468539 valid's multi_logloss: 1.41899
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[71]    train's multi_logloss: 0.446731 valid's multi_logloss: 1.3606
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[55]    train's multi_logloss: 0.54692  valid's multi_logloss: 1.4231
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.405254', '1.393798', '1.418993', '1.360599', '1.423103']
+[INFO][base_model.py:143] 平均得分: 1.400349 ± 0.022416
+[INFO][base_model.py:144] OOF得分: 1.400351
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[89]    train's multi_logloss: 0.524666 valid's multi_logloss: 1.39771
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[99]    train's multi_logloss: 0.51365  valid's multi_logloss: 1.40196
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[89]    train's multi_logloss: 0.529436 valid's multi_logloss: 1.3945
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.508791 valid's multi_logloss: 1.3844
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[67]    train's multi_logloss: 0.585299 valid's multi_logloss: 1.41882
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.397706', '1.401965', '1.394498', '1.384397', '1.418824']
+[INFO][base_model.py:143] 平均得分: 1.399478 ± 0.011277
+[INFO][base_model.py:144] OOF得分: 1.399477
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[52]    train's multi_logloss: 0.364419 valid's multi_logloss: 1.41412
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[49]    train's multi_logloss: 0.389137 valid's multi_logloss: 1.43471
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[47]    train's multi_logloss: 0.411969 valid's multi_logloss: 1.40987
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[55]    train's multi_logloss: 0.346992 valid's multi_logloss: 1.36951
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[42]    train's multi_logloss: 0.450543 valid's multi_logloss: 1.46763
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.414117', '1.434711', '1.409871', '1.369512', '1.467627']
+[INFO][base_model.py:143] 平均得分: 1.419168 ± 0.032148
+[INFO][base_model.py:144] OOF得分: 1.419166
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[156]   train's multi_logloss: 0.414462 valid's multi_logloss: 1.38909
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[132]   train's multi_logloss: 0.495407 valid's multi_logloss: 1.39045
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[112]   train's multi_logloss: 0.572584 valid's multi_logloss: 1.37957
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[103]   train's multi_logloss: 0.614951 valid's multi_logloss: 1.36525
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[81]    train's multi_logloss: 0.715932 valid's multi_logloss: 1.4151
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.389086', '1.390455', '1.379567', '1.365252', '1.415097']
+[INFO][base_model.py:143] 平均得分: 1.387891 ± 0.016309
+[INFO][base_model.py:144] OOF得分: 1.387892
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[65]    train's multi_logloss: 0.401809 valid's multi_logloss: 1.38539
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[79]    train's multi_logloss: 0.348396 valid's multi_logloss: 1.40082
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[68]    train's multi_logloss: 0.389246 valid's multi_logloss: 1.39645
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[84]    train's multi_logloss: 0.337371 valid's multi_logloss: 1.37375
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[55]    train's multi_logloss: 0.460803 valid's multi_logloss: 1.42186
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.385395', '1.400821', '1.396449', '1.373748', '1.421861']
+[INFO][base_model.py:143] 平均得分: 1.395655 ± 0.016120
+[INFO][base_model.py:144] OOF得分: 1.395652
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[78]    train's multi_logloss: 0.332942 valid's multi_logloss: 1.39845
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[73]    train's multi_logloss: 0.353479 valid's multi_logloss: 1.40193
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[60]    train's multi_logloss: 0.417632 valid's multi_logloss: 1.37239
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[70]    train's multi_logloss: 0.367007 valid's multi_logloss: 1.36188
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[51]    train's multi_logloss: 0.477625 valid's multi_logloss: 1.42237
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.398455', '1.401931', '1.372394', '1.361885', '1.422375']
+[INFO][base_model.py:143] 平均得分: 1.391408 ± 0.021691
+[INFO][base_model.py:144] OOF得分: 1.391410
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[350]   train's multi_logloss: 0.533168 valid's multi_logloss: 1.38018
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[271]   train's multi_logloss: 0.645559 valid's multi_logloss: 1.38969
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[301]   train's multi_logloss: 0.601397 valid's multi_logloss: 1.38279
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[357]   train's multi_logloss: 0.530438 valid's multi_logloss: 1.33448
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[302]   train's multi_logloss: 0.591054 valid's multi_logloss: 1.41131
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.380180', '1.389691', '1.382790', '1.334478', '1.411306']
+[INFO][base_model.py:143] 平均得分: 1.379689 ± 0.025114
+[INFO][base_model.py:144] OOF得分: 1.379689
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[40]    train's multi_logloss: 0.379054 valid's multi_logloss: 1.43062
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[47]    train's multi_logloss: 0.318438 valid's multi_logloss: 1.42413
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[51]    train's multi_logloss: 0.292648 valid's multi_logloss: 1.42698
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[43]    train's multi_logloss: 0.35456  valid's multi_logloss: 1.36139
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[42]    train's multi_logloss: 0.362337 valid's multi_logloss: 1.42935
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.430625', '1.424127', '1.426978', '1.361391', '1.429346']
+[INFO][base_model.py:143] 平均得分: 1.414493 ± 0.026644
+[INFO][base_model.py:144] OOF得分: 1.414497
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[49]    train's multi_logloss: 0.211248 valid's multi_logloss: 1.39902
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[29]    train's multi_logloss: 0.429064 valid's multi_logloss: 1.42731
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[30]    train's multi_logloss: 0.411932 valid's multi_logloss: 1.40345
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[46]    train's multi_logloss: 0.230619 valid's multi_logloss: 1.3713
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[24]    train's multi_logloss: 0.529154 valid's multi_logloss: 1.44292
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.399021', '1.427314', '1.403450', '1.371298', '1.442919']
+[INFO][base_model.py:143] 平均得分: 1.408801 ± 0.024647
+[INFO][base_model.py:144] OOF得分: 1.408798
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.08898  valid's multi_logloss: 1.4936
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.09079  valid's multi_logloss: 1.48695
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.09382  valid's multi_logloss: 1.47554
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.09601  valid's multi_logloss: 1.45825
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.09433  valid's multi_logloss: 1.49217
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.493597', '1.486946', '1.475536', '1.458255', '1.492168']
+[INFO][base_model.py:143] 平均得分: 1.481300 ± 0.013157
+[INFO][base_model.py:144] OOF得分: 1.481303
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63466  valid's multi_logloss: 1.73514
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63522  valid's multi_logloss: 1.72586
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63982  valid's multi_logloss: 1.71786
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63895  valid's multi_logloss: 1.71944
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.6359   valid's multi_logloss: 1.73079
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.735145', '1.725857', '1.717865', '1.719436', '1.730785']
+[INFO][base_model.py:143] 平均得分: 1.725817 ± 0.006567
+[INFO][base_model.py:144] OOF得分: 1.725820
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.54579  valid's multi_logloss: 1.69708
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.54411  valid's multi_logloss: 1.68638
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.5513   valid's multi_logloss: 1.6731
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.55053  valid's multi_logloss: 1.6745
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.54664  valid's multi_logloss: 1.69306
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.697079', '1.686382', '1.673100', '1.674496', '1.693057']
+[INFO][base_model.py:143] 平均得分: 1.684823 ± 0.009639
+[INFO][base_model.py:144] OOF得分: 1.684826
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.62781  valid's multi_logloss: 1.74328
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.62957  valid's multi_logloss: 1.73574
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63187  valid's multi_logloss: 1.72738
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63266  valid's multi_logloss: 1.73047
+Training until validation scores don't improve for 50 rounds
+Did not meet early stopping. Best iteration is:
+[55]    train's multi_logloss: 1.63125  valid's multi_logloss: 1.7387
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.743280', '1.735735', '1.727376', '1.730474', '1.738696']
+[INFO][base_model.py:143] 平均得分: 1.735112 ± 0.005680
+[INFO][base_model.py:144] OOF得分: 1.735114
+[INFO][base_model.py:145] ============================================================
+[INFO][smbo.py:327] Finished 50 trials.
+[INFO][smbo.py:335] Configuration budget is exhausted:
+[INFO][smbo.py:336] --- Remaining wallclock time: inf
+[INFO][smbo.py:337] --- Remaining cpu time: inf
+[INFO][smbo.py:338] --- Remaining trials: 0
+[INFO][base_model.py:36] 初始化 LightGBMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - LightGBMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[316]   train's multi_logloss: 0.394949 valid's multi_logloss: 1.37859
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[269]   train's multi_logloss: 0.456648 valid's multi_logloss: 1.38668
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[251]   train's multi_logloss: 0.487438 valid's multi_logloss: 1.37525
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[325]   train's multi_logloss: 0.392067 valid's multi_logloss: 1.35199
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[228]   train's multi_logloss: 0.517314 valid's multi_logloss: 1.39598
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.378585', '1.386680', '1.375253', '1.351994', '1.395976']
+[INFO][base_model.py:143] 平均得分: 1.377698 ± 0.014712
+[INFO][base_model.py:144] OOF得分: 1.377698
+[INFO][base_model.py:145] ============================================================
+[INFO][run_smac_hpo.py:65] Best params for lightgbm: {'colsample_bytree': 0.7431902072738, 'learning_rate': 0.0493080678626, 'max_depth': 4, 'min_child_samples': 91, 'num_leaves': 71, 'reg_alpha': 5.592571578102, 'reg_lambda': 5.1861293154702, 'subsample': 0.9498860441916, 'n_estimators': 500}
+[INFO][run_smac_hpo.py:66] Best score for lightgbm: 1.377697971079619
+[INFO][run_smac_hpo.py:40] Starting HPO for mlp...
+[INFO][base_hpo.py:67] 已加载模型 'mlp' 的搜索空间，包含 7 个超参数
+[INFO][base_hpo.py:40] 初始化 SMAC3HyperbandOptimizer
+[INFO][base_hpo.py:41] 模型: mlp, n_trials=50, cv_folds=5
+[INFO][abstract_initial_design.py:87] Reducing the number of initial configurations from 60 to 12 (max_ratio == 0.25).
+[INFO][abstract_initial_design.py:139] Using 12 initial design configurations and 0 additional configurations.
+[INFO][abstract_intensifier.py:307] Using only one seed for deterministic scenario.
+[INFO][successive_halving.py:164] Successive Halving uses budget type BUDGETS with eta 3, min budget 10, and max budget 200.
+[INFO][successive_halving.py:323] Number of configs in stage:
+[INFO][successive_halving.py:325] --- Bracket 0: [9, 3, 1]
+[INFO][successive_halving.py:325] --- Bracket 1: [5, 1]
+[INFO][successive_halving.py:325] --- Bracket 2: [3]
+[INFO][successive_halving.py:327] Budgets in stage:
+[INFO][successive_halving.py:329] --- Bracket 0: [22.22222222222222, 66.66666666666666, 200.0]
+[INFO][successive_halving.py:329] --- Bracket 1: [66.66666666666666, 200.0]
+[INFO][successive_halving.py:329] --- Bracket 2: [200.0]
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.606142', '1.618585', '1.664022', '1.518924', '1.672797']
+[INFO][mlp_model.py:113] 平均得分: 1.616094 ± 0.054881
+[INFO][mlp_model.py:114] OOF得分: 1.616092
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:517] Added config 095e40 as new incumbent because there are no incumbents yet.
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.355851', '1.324188', '1.360021', '1.325655', '1.422699']
+[INFO][mlp_model.py:113] 平均得分: 1.357683 ± 0.035731
+[INFO][mlp_model.py:114] OOF得分: 1.357682
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 346f83 and rejected config 095e40 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.420309', '1.393325', '1.365583', '1.335901', '1.457436']
+[INFO][mlp_model.py:113] 平均得分: 1.394511 ± 0.042186
+[INFO][mlp_model.py:114] OOF得分: 1.394517
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.778287', '1.756485', '1.850711', '1.586803', '1.770772']
+[INFO][mlp_model.py:113] 平均得分: 1.748612 ± 0.087224
+[INFO][mlp_model.py:114] OOF得分: 1.748619
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.344515', '1.313379', '1.371880', '1.291020', '1.383843']
+[INFO][mlp_model.py:113] 平均得分: 1.340927 ± 0.034821
+[INFO][mlp_model.py:114] OOF得分: 1.340928
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config dc5a8b and rejected config 346f83 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.380638', '1.625210', '1.541712', '1.419130', '1.589563']
+[INFO][mlp_model.py:113] 平均得分: 1.511251 ± 0.095492
+[INFO][mlp_model.py:114] OOF得分: 1.511218
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.343390', '1.354740', '1.348282', '1.281392', '1.422482']
+[INFO][mlp_model.py:113] 平均得分: 1.350057 ± 0.044788
+[INFO][mlp_model.py:114] OOF得分: 1.350056
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.356172', '1.336861', '1.337313', '1.302455', '1.402315']
+[INFO][mlp_model.py:113] 平均得分: 1.347023 ± 0.032634
+[INFO][mlp_model.py:114] OOF得分: 1.347025
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.462868', '1.396678', '1.390796', '1.447900', '1.662478']
+[INFO][mlp_model.py:113] 平均得分: 1.472144 ± 0.099210
+[INFO][mlp_model.py:114] OOF得分: 1.472142
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.689174', '1.706702', '1.785730', '1.532007', '1.787905']
+[INFO][mlp_model.py:113] 平均得分: 1.700304 ± 0.093231
+[INFO][mlp_model.py:114] OOF得分: 1.700301
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.352965', '1.336861', '1.342392', '1.302455', '1.402315']
+[INFO][mlp_model.py:113] 平均得分: 1.347398 ± 0.032258
+[INFO][mlp_model.py:114] OOF得分: 1.347399
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config e90aff and rejected config dc5a8b as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.335213', '1.334587', '1.341723', '1.270915', '1.398901']
+[INFO][mlp_model.py:113] 平均得分: 1.336268 ± 0.040565
+[INFO][mlp_model.py:114] OOF得分: 1.336267
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 9ad146 and rejected config e90aff as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.335213', '1.334587', '1.341723', '1.270915', '1.398901']
+[INFO][mlp_model.py:113] 平均得分: 1.336268 ± 0.040565
+[INFO][mlp_model.py:114] OOF得分: 1.336267
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.549152', '1.820664', '1.641109', '1.329755', '1.566318']
+[INFO][mlp_model.py:113] 平均得分: 1.581400 ± 0.158370
+[INFO][mlp_model.py:114] OOF得分: 1.581391
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.401058', '1.516900', '1.995351', '1.474355', '2.304292']
+[INFO][mlp_model.py:113] 平均得分: 1.738391 ± 0.351807
+[INFO][mlp_model.py:114] OOF得分: 1.743787
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.817336', '1.766197', '1.968937', '1.639270', '1.904470']
+[INFO][mlp_model.py:113] 平均得分: 1.819242 ± 0.113912
+[INFO][mlp_model.py:114] OOF得分: 1.819326
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.440846', '1.519145', '1.632890', '1.358808', '1.702665']
+[INFO][mlp_model.py:113] 平均得分: 1.530871 ± 0.124714
+[INFO][mlp_model.py:114] OOF得分: 1.530848
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.963639', '1.836570', '2.083252', '1.807530', '2.069353']
+[INFO][mlp_model.py:113] 平均得分: 1.952069 ± 0.114307
+[INFO][mlp_model.py:114] OOF得分: 1.952072
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.440846', '1.519145', '1.632890', '1.358808', '1.702665']
+[INFO][mlp_model.py:113] 平均得分: 1.530871 ± 0.124714
+[INFO][mlp_model.py:114] OOF得分: 1.530848
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['2.838974', '2.872079', '2.902455', '2.464065', '2.944337']
+[INFO][mlp_model.py:113] 平均得分: 2.804382 ± 0.173667
+[INFO][mlp_model.py:114] OOF得分: 2.824185
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.361376', '1.631027', '1.959658', '1.479404', '2.046728']
+[INFO][mlp_model.py:113] 平均得分: 1.695639 ± 0.266696
+[INFO][mlp_model.py:114] OOF得分: 1.700177
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.568980', '1.363879', '1.706695', '1.489564', '1.545395']
+[INFO][mlp_model.py:113] 平均得分: 1.534903 ± 0.111435
+[INFO][mlp_model.py:114] OOF得分: 1.534911
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.520186', '1.535718', '1.585377', '1.462735', '1.521899']
+[INFO][mlp_model.py:113] 平均得分: 1.525183 ± 0.039166
+[INFO][mlp_model.py:114] OOF得分: 1.525182
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.424437', '1.392135', '1.426230', '1.411321', '1.539064']
+[INFO][mlp_model.py:113] 平均得分: 1.438637 ± 0.051672
+[INFO][mlp_model.py:114] OOF得分: 1.438634
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.374369', '1.461912', '1.372526', '1.355581', '1.494334']
+[INFO][mlp_model.py:113] 平均得分: 1.411744 ± 0.055547
+[INFO][mlp_model.py:114] OOF得分: 1.411735
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.333851', '1.303918', '1.356395', '1.268328', '1.412104']
+[INFO][mlp_model.py:113] 平均得分: 1.334919 ± 0.048611
+[INFO][mlp_model.py:114] OOF得分: 1.334919
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 855913 and rejected config 9ad146 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.364714', '1.328112', '1.369235', '1.283583', '1.426272']
+[INFO][mlp_model.py:113] 平均得分: 1.354383 ± 0.047325
+[INFO][mlp_model.py:114] OOF得分: 1.354386
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.749648', '1.772408', '1.759558', '1.658262', '1.737353']
+[INFO][mlp_model.py:113] 平均得分: 1.735446 ± 0.040275
+[INFO][mlp_model.py:114] OOF得分: 1.736398
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.310092', '1.348181', '1.349388', '1.307844', '1.420515']
+[INFO][mlp_model.py:113] 平均得分: 1.347204 ± 0.040760
+[INFO][mlp_model.py:114] OOF得分: 1.347195
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.350727', '1.321033', '1.376349', '1.297201', '1.443132']
+[INFO][mlp_model.py:113] 平均得分: 1.357688 ± 0.050398
+[INFO][mlp_model.py:114] OOF得分: 1.357687
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.355412', '1.326168', '1.337678', '1.296838', '1.470154']
+[INFO][mlp_model.py:113] 平均得分: 1.357250 ± 0.059581
+[INFO][mlp_model.py:114] OOF得分: 1.357250
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.881068', '1.752934', '1.940145', '1.739884', '1.995236']
+[INFO][mlp_model.py:113] 平均得分: 1.861854 ± 0.101024
+[INFO][mlp_model.py:114] OOF得分: 1.861858
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.310092', '1.381936', '1.349388', '1.279857', '1.420515']
+[INFO][mlp_model.py:113] 平均得分: 1.348357 ± 0.049983
+[INFO][mlp_model.py:114] OOF得分: 1.348348
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config e61a98 and rejected config 855913 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.364714', '1.435908', '1.369235', '1.287021', '1.611506']
+[INFO][mlp_model.py:113] 平均得分: 1.413677 ± 0.109585
+[INFO][mlp_model.py:114] OOF得分: 1.413665
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.310092', '1.381936', '1.349388', '1.279857', '1.420515']
+[INFO][mlp_model.py:113] 平均得分: 1.348357 ± 0.049983
+[INFO][mlp_model.py:114] OOF得分: 1.348348
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.356446', '1.520625', '1.442264', '1.317919', '1.405405']
+[INFO][mlp_model.py:113] 平均得分: 1.408532 ± 0.070194
+[INFO][mlp_model.py:114] OOF得分: 1.408519
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['2.149888', '1.973569', '2.205029', '1.977735', '2.212176']
+[INFO][mlp_model.py:113] 平均得分: 2.103680 ± 0.106742
+[INFO][mlp_model.py:114] OOF得分: 2.103691
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.307546', '1.345876', '1.333858', '1.300292', '1.385307']
+[INFO][mlp_model.py:113] 平均得分: 1.334576 ± 0.030357
+[INFO][mlp_model.py:114] OOF得分: 1.334569
+[INFO][mlp_model.py:115] ============================================================
+[INFO][abstract_intensifier.py:596] Added config eb0062 and rejected config e61a98 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.354767', '1.326072', '1.468913', '1.340336', '1.584706']
+[INFO][mlp_model.py:113] 平均得分: 1.414959 ± 0.098811
+[INFO][mlp_model.py:114] OOF得分: 1.414944
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.364261', '1.342273', '1.365106', '1.288149', '1.592253']
+[INFO][mlp_model.py:113] 平均得分: 1.390408 ± 0.104727
+[INFO][mlp_model.py:114] OOF得分: 1.390402
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.307546', '1.345876', '1.333858', '1.300292', '1.385307']
+[INFO][mlp_model.py:113] 平均得分: 1.334576 ± 0.030357
+[INFO][mlp_model.py:114] OOF得分: 1.334569
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.313919', '1.437712', '1.402614', '1.302228', '1.509944']
+[INFO][mlp_model.py:113] 平均得分: 1.393283 ± 0.077795
+[INFO][mlp_model.py:114] OOF得分: 1.393263
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['2.091767', '1.961391', '2.041951', '1.808566', '2.111701']
+[INFO][mlp_model.py:113] 平均得分: 2.003075 ± 0.110226
+[INFO][mlp_model.py:114] OOF得分: 2.003098
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['2.881543', '2.570144', '2.886946', '2.463399', '2.731387']
+[INFO][mlp_model.py:113] 平均得分: 2.706684 ± 0.168232
+[INFO][mlp_model.py:114] OOF得分: 2.710309
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.462310', '1.499133', '1.463239', '1.359377', '1.517718']
+[INFO][mlp_model.py:113] 平均得分: 1.460355 ± 0.054778
+[INFO][mlp_model.py:114] OOF得分: 1.460356
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.368570', '1.335755', '1.351655', '1.294885', '1.372763']
+[INFO][mlp_model.py:113] 平均得分: 1.344726 ± 0.028168
+[INFO][mlp_model.py:114] OOF得分: 1.344732
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.383775', '1.391528', '1.384474', '1.330949', '1.434093']
+[INFO][mlp_model.py:113] 平均得分: 1.384964 ± 0.032790
+[INFO][mlp_model.py:114] OOF得分: 1.384963
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.351027', '1.375538', '1.359797', '1.313736', '1.402822']
+[INFO][mlp_model.py:113] 平均得分: 1.360584 ± 0.029307
+[INFO][mlp_model.py:114] OOF得分: 1.360581
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.348667', '1.360415', '1.400581', '1.275808', '1.430300']
+[INFO][mlp_model.py:113] 平均得分: 1.363154 ± 0.052452
+[INFO][mlp_model.py:114] OOF得分: 1.363151
+[INFO][mlp_model.py:115] ============================================================
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.358544', '1.379186', '1.366704', '1.309491', '1.418036']
+[INFO][mlp_model.py:113] 平均得分: 1.366392 ± 0.035015
+[INFO][mlp_model.py:114] OOF得分: 1.366390
+[INFO][mlp_model.py:115] ============================================================
+[INFO][smbo.py:327] Finished 50 trials.
+[INFO][smbo.py:335] Configuration budget is exhausted:
+[INFO][smbo.py:336] --- Remaining wallclock time: inf
+[INFO][smbo.py:337] --- Remaining cpu time: inf
+[INFO][smbo.py:338] --- Remaining trials: 0
+[INFO][base_model.py:36] 初始化 MLPModel，5折交叉验证
+[INFO][mlp_model.py:59] ============================================================
+[INFO][mlp_model.py:60] 开始交叉验证训练 - MLPModel
+[INFO][mlp_model.py:61] 训练样本数: 3976, 特征维度: 768
+[INFO][mlp_model.py:62] ============================================================
+[INFO][mlp_model.py:110]
+============================================================
+[INFO][mlp_model.py:111] 交叉验证完成!
+[INFO][mlp_model.py:112] 各折得分: ['1.307546', '1.345876', '1.333858', '1.300292', '1.385307']
+[INFO][mlp_model.py:113] 平均得分: 1.334576 ± 0.030357
+[INFO][mlp_model.py:114] OOF得分: 1.334569
+[INFO][mlp_model.py:115] ============================================================
+[INFO][run_smac_hpo.py:65] Best params for mlp: {'activation': 'relu', 'alpha': 0.0011696641693, 'batch_size': 256, 'early_stopping': True, 'hidden_layer_sizes': [128, 64], 'learning_rate_init': 0.0003133241796, 'max_iter': 200}
+[INFO][run_smac_hpo.py:66] Best score for mlp: 1.3345691421507162
+[ERROR][run_smac_hpo.py:98] Error optimizing mlp: Object of type bool_ is not JSON serializable
+Traceback (most recent call last):
+  File "/home/williamxn/5003-Final-Project/run_smac_hpo.py", line 92, in main
+    best_params, best_score = run_hpo(model_name, X_train, y_train, n_trials=50)
+  File "/home/williamxn/5003-Final-Project/run_smac_hpo.py", line 71, in run_hpo
+    json.dump(best_params, f, indent=4, cls=NpEncoder)
+  File "/home/williamxn/anaconda3/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/williamxn/anaconda3/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/williamxn/anaconda3/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/williamxn/anaconda3/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/williamxn/5003-Final-Project/run_smac_hpo.py", line 22, in default
+    return super(NpEncoder, self).default(obj)
+  File "/home/williamxn/anaconda3/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable
+[INFO][run_smac_hpo.py:40] Starting HPO for svm...
+[INFO][base_hpo.py:67] 已加载模型 'svm' 的搜索空间，包含 5 个超参数
+[INFO][base_hpo.py:40] 初始化 SMAC3HyperbandOptimizer
+[INFO][base_hpo.py:41] 模型: svm, n_trials=50, cv_folds=5
+[INFO][abstract_initial_design.py:87] Reducing the number of initial configurations from 50 to 12 (max_ratio == 0.25).
+[INFO][abstract_initial_design.py:139] Using 12 initial design configurations and 0 additional configurations.
+[INFO][abstract_intensifier.py:307] Using only one seed for deterministic scenario.
+[INFO][successive_halving.py:164] Successive Halving uses budget type BUDGETS with eta 3, min budget 100, and max budget 2000.
+[INFO][successive_halving.py:323] Number of configs in stage:
+[INFO][successive_halving.py:325] --- Bracket 0: [9, 3, 1]
+[INFO][successive_halving.py:325] --- Bracket 1: [5, 1]
+[INFO][successive_halving.py:325] --- Bracket 2: [3]
+[INFO][successive_halving.py:327] Budgets in stage:
+[INFO][successive_halving.py:329] --- Bracket 0: [222.2222222222222, 666.6666666666666, 2000.0]
+[INFO][successive_halving.py:329] --- Bracket 1: [666.6666666666666, 2000.0]
+[INFO][successive_halving.py:329] --- Bracket 2: [2000.0]
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.763559', '1.704306', '1.721322', '1.742156', '1.730216']
+[INFO][base_model.py:143] 平均得分: 1.732312 ± 0.019914
+[INFO][base_model.py:144] OOF得分: 1.732319
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:517] Added config 79a5ae as new incumbent because there are no incumbents yet.
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.886150', '1.874529', '1.876587', '1.879229', '1.885960']
+[INFO][base_model.py:143] 平均得分: 1.880491 ± 0.004782
+[INFO][base_model.py:144] OOF得分: 1.880492
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config d95645 and rejected config 79a5ae as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.595579', '1.626644', '1.595407', '1.599451']
+[INFO][base_model.py:143] 平均得分: 1.603746 ± 0.011691
+[INFO][base_model.py:144] OOF得分: 1.603745
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.748020', '1.693329', '1.686052', '1.680540', '1.718829']
+[INFO][base_model.py:143] 平均得分: 1.705354 ± 0.025039
+[INFO][base_model.py:144] OOF得分: 1.705365
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.794183', '1.785358', '1.798763', '1.786454', '1.798962']
+[INFO][base_model.py:143] 平均得分: 1.792744 ± 0.005849
+[INFO][base_model.py:144] OOF得分: 1.792744
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.537651', '1.519387', '1.536514', '1.484302', '1.531606']
+[INFO][base_model.py:143] 平均得分: 1.521892 ± 0.019879
+[INFO][base_model.py:144] OOF得分: 1.521896
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config ad65d1 and rejected config d95645 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.422826', '1.468939', '1.460520', '1.423055', '1.484483']
+[INFO][base_model.py:143] 平均得分: 1.451965 ± 0.024914
+[INFO][base_model.py:144] OOF得分: 1.451957
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config f78600 and rejected config ad65d1 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.421953', '1.444334', '1.440429', '1.413510', '1.473481']
+[INFO][base_model.py:143] 平均得分: 1.438741 ± 0.020782
+[INFO][base_model.py:144] OOF得分: 1.438737
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.404287', '1.425392', '1.431362', '1.390043', '1.442827']
+[INFO][base_model.py:143] 平均得分: 1.418782 ± 0.019059
+[INFO][base_model.py:144] OOF得分: 1.418779
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config ad65d1 and rejected config f78600 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.535025', '1.472358', '1.491705', '1.469177', '1.509509']
+[INFO][base_model.py:143] 平均得分: 1.495555 ± 0.024501
+[INFO][base_model.py:144] OOF得分: 1.495565
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.410513', '1.413986', '1.415073', '1.385778', '1.446849']
+[INFO][base_model.py:143] 平均得分: 1.414440 ± 0.019432
+[INFO][base_model.py:144] OOF得分: 1.414439
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.819899', '1.778376', '1.786041', '1.786329', '1.806884']
+[INFO][base_model.py:143] 平均得分: 1.795506 ± 0.015438
+[INFO][base_model.py:144] OOF得分: 1.795512
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.520641', '1.508079', '1.523233', '1.491117', '1.563527']
+[INFO][base_model.py:143] 平均得分: 1.521319 ± 0.023971
+[INFO][base_model.py:144] OOF得分: 1.521319
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.413100', '1.430578', '1.416775', '1.392686', '1.445848']
+[INFO][base_model.py:143] 平均得分: 1.419798 ± 0.017798
+[INFO][base_model.py:144] OOF得分: 1.419796
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.438627', '1.458260', '1.463001', '1.425465', '1.490695']
+[INFO][base_model.py:143] 平均得分: 1.455210 ± 0.022311
+[INFO][base_model.py:144] OOF得分: 1.455205
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.414812', '1.437942', '1.429720', '1.412824', '1.470261']
+[INFO][base_model.py:143] 平均得分: 1.433112 ± 0.020791
+[INFO][base_model.py:144] OOF得分: 1.433107
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.403368', '1.427363', '1.412824', '1.392890', '1.447573']
+[INFO][base_model.py:143] 平均得分: 1.416803 ± 0.019113
+[INFO][base_model.py:144] OOF得分: 1.416800
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.438311', '1.445997', '1.444879', '1.413970', '1.464833']
+[INFO][base_model.py:143] 平均得分: 1.441598 ± 0.016396
+[INFO][base_model.py:144] OOF得分: 1.441597
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.771046', '1.800011', '1.764469', '1.804742', '1.811169']
+[INFO][base_model.py:143] 平均得分: 1.790287 ± 0.018848
+[INFO][base_model.py:144] OOF得分: 1.790283
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.696911', '1.673944', '1.688671', '1.660424', '1.714970']
+[INFO][base_model.py:143] 平均得分: 1.686984 ± 0.018762
+[INFO][base_model.py:144] OOF得分: 1.686987
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.404510', '1.407549', '1.425493', '1.372218', '1.426379']
+[INFO][base_model.py:143] 平均得分: 1.407230 ± 0.019665
+[INFO][base_model.py:144] OOF得分: 1.407229
+[INFO][base_model.py:145] ============================================================
+[INFO][abstract_intensifier.py:596] Added config 6dbf65 and rejected config ad65d1 as incumbent because it is not better than the incumbents on 1 instances:
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.513186', '1.497639', '1.520426', '1.477373', '1.526755']
+[INFO][base_model.py:143] 平均得分: 1.507076 ± 0.017744
+[INFO][base_model.py:144] OOF得分: 1.507077
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.475475', '1.491056', '1.507943', '1.453824', '1.511314']
+[INFO][base_model.py:143] 平均得分: 1.487922 ± 0.021333
+[INFO][base_model.py:144] OOF得分: 1.487919
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.582144', '1.555979', '1.589965', '1.548700', '1.569983']
+[INFO][base_model.py:143] 平均得分: 1.569354 ± 0.015455
+[INFO][base_model.py:144] OOF得分: 1.569358
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.458397', '1.445717', '1.463123', '1.425984', '1.492054']
+[INFO][base_model.py:143] 平均得分: 1.457055 ± 0.021714
+[INFO][base_model.py:144] OOF得分: 1.457055
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.470160', '1.484202', '1.485165', '1.455622', '1.456674']
+[INFO][base_model.py:143] 平均得分: 1.470365 ± 0.012770
+[INFO][base_model.py:144] OOF得分: 1.470364
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.452863', '1.466125', '1.476843', '1.423698', '1.480457']
+[INFO][base_model.py:143] 平均得分: 1.459997 ± 0.020535
+[INFO][base_model.py:144] OOF得分: 1.459995
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.385582', '1.405100', '1.405325', '1.369010', '1.434408']
+[INFO][base_model.py:143] 平均得分: 1.399885 ± 0.021938
+[INFO][base_model.py:144] OOF得分: 1.399881
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.422780', '1.446396', '1.445969', '1.414512', '1.476659']
+[INFO][base_model.py:143] 平均得分: 1.441263 ± 0.021719
+[INFO][base_model.py:144] OOF得分: 1.441259
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.419026', '1.441102', '1.434841', '1.412493', '1.472143']
+[INFO][base_model.py:143] 平均得分: 1.435921 ± 0.020854
+[INFO][base_model.py:144] OOF得分: 1.435917
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.384409', '1.404203', '1.404340', '1.370025', '1.431988']
+[INFO][base_model.py:143] 平均得分: 1.398993 ± 0.020958
+[INFO][base_model.py:144] OOF得分: 1.398989
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.718561', '1.780726', '1.705566', '1.760867', '1.764858']
+[INFO][base_model.py:143] 平均得分: 1.746116 ± 0.028880
+[INFO][base_model.py:144] OOF得分: 1.746109
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.816622', '1.802024', '1.822714', '1.821182', '1.823826']
+[INFO][base_model.py:143] 平均得分: 1.817274 ± 0.008010
+[INFO][base_model.py:144] OOF得分: 1.817273
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.803824', '1.768155', '1.777473', '1.781376', '1.801572']
+[INFO][base_model.py:143] 平均得分: 1.786480 ± 0.013940
+[INFO][base_model.py:144] OOF得分: 1.786484
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.800129', '1.770805', '1.773381', '1.781152', '1.800324']
+[INFO][base_model.py:143] 平均得分: 1.785158 ± 0.012766
+[INFO][base_model.py:144] OOF得分: 1.785162
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.804741', '1.768235', '1.776989', '1.781893', '1.801307']
+[INFO][base_model.py:143] 平均得分: 1.786633 ± 0.014122
+[INFO][base_model.py:144] OOF得分: 1.786638
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.718561', '1.780726', '1.705566', '1.760867', '1.764858']
+[INFO][base_model.py:143] 平均得分: 1.746116 ± 0.028880
+[INFO][base_model.py:144] OOF得分: 1.746109
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.758919', '1.786403', '1.747755', '1.800495', '1.787252']
+[INFO][base_model.py:143] 平均得分: 1.776165 ± 0.019617
+[INFO][base_model.py:144] OOF得分: 1.776161
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.940347', '1.944424', '1.937700', '1.941564', '1.940456']
+[INFO][base_model.py:143] 平均得分: 1.940898 ± 0.002173
+[INFO][base_model.py:144] OOF得分: 1.940898
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.502228', '1.506971', '1.507145', '1.461194', '1.547481']
+[INFO][base_model.py:143] 平均得分: 1.505004 ± 0.027349
+[INFO][base_model.py:144] OOF得分: 1.505003
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.815525', '1.805753', '1.811735', '1.802929', '1.820594']
+[INFO][base_model.py:143] 平均得分: 1.811307 ± 0.006407
+[INFO][base_model.py:144] OOF得分: 1.811308
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.665039', '1.609764', '1.622147', '1.631557', '1.650467']
+[INFO][base_model.py:143] 平均得分: 1.635795 ± 0.019760
+[INFO][base_model.py:144] OOF得分: 1.635802
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.753751', '1.703606', '1.700109', '1.696407', '1.716998']
+[INFO][base_model.py:143] 平均得分: 1.714174 ± 0.020974
+[INFO][base_model.py:144] OOF得分: 1.714184
+[INFO][base_model.py:145] ============================================================
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.601649', '1.593975', '1.626644', '1.593557', '1.600516']
+[INFO][base_model.py:143] 平均得分: 1.603268 ± 0.012143
+[INFO][base_model.py:144] OOF得分: 1.603268
+[INFO][base_model.py:145] ============================================================
+[INFO][smbo.py:327] Finished 50 trials.
+[INFO][smbo.py:335] Configuration budget is exhausted:
+[INFO][smbo.py:336] --- Remaining wallclock time: inf
+[INFO][smbo.py:337] --- Remaining cpu time: inf
+[INFO][smbo.py:338] --- Remaining trials: 0
+[INFO][base_model.py:36] 初始化 SVMModel，5折交叉验证
+[INFO][base_model.py:94] ============================================================
+[INFO][base_model.py:95] 开始交叉验证训练 - SVMModel
+[INFO][base_model.py:96] 训练样本数: 3976, 特征维度: 768
+[INFO][base_model.py:97] ============================================================
+[INFO][base_model.py:140]
+============================================================
+[INFO][base_model.py:141] 交叉验证完成!
+[INFO][base_model.py:142] 各折得分: ['1.384409', '1.404203', '1.404340', '1.370025', '1.431988']
+[INFO][base_model.py:143] 平均得分: 1.398993 ± 0.020958
+[INFO][base_model.py:144] OOF得分: 1.398989
+[INFO][base_model.py:145] ============================================================
+[INFO][run_smac_hpo.py:65] Best params for svm: {'C': 9.1826677661087, 'class_weight': 'None', 'degree': 2, 'gamma': 0.0007956217014, 'kernel': 'rbf', 'max_iter': 2000}
+[INFO][run_smac_hpo.py:66] Best score for svm: 1.3989891898870002
+[INFO][run_smac_hpo.py:106] HPO completed for all models.

@@ -1,0 +1,9 @@
+{
+    "activation": "relu",
+    "alpha": 0.0011696641693,
+    "batch_size": 256,
+    "early_stopping": true,
+    "hidden_layer_sizes": [128, 64],
+    "learning_rate_init": 0.0003133241796,
+    "max_iter": 200
+}

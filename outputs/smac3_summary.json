@@ -1,0 +1,27 @@
+{
+    "lightgbm": {
+        "best_params": {
+            "colsample_bytree": 0.7431902072738,
+            "learning_rate": 0.0493080678626,
+            "max_depth": 4,
+            "min_child_samples": 91,
+            "num_leaves": 71,
+            "reg_alpha": 5.592571578102,
+            "reg_lambda": 5.1861293154702,
+            "subsample": 0.9498860441916,
+            "n_estimators": 500
+        },
+        "best_score": 1.377697971079619
+    },
+    "svm": {
+        "best_params": {
+            "C": 9.1826677661087,
+            "class_weight": "None",
+            "degree": 2,
+            "gamma": 0.0007956217014,
+            "kernel": "rbf",
+            "max_iter": 2000
+        },
+        "best_score": 1.3989891898870002
+    }
+}

@@ -1,0 +1,227 @@
+{
+  "stats": {
+    "submitted": 10,
+    "finished": 9,
+    "running": 1
+  },
+  "data": [
+    {
+      "config_id": 1,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": 1.732319480848067,
+      "time": 190.709219455719,
+      "cpu_time": 192.46547029999783,
+      "status": 1,
+      "starttime": 1764986484.0476632,
+      "endtime": 1764986674.758597,
+      "additional_info": {}
+    },
+    {
+      "config_id": 2,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": 1.8804923211385856,
+      "time": 249.74409890174866,
+      "cpu_time": 249.73225559999992,
+      "status": 1,
+      "starttime": 1764986674.7657099,
+      "endtime": 1764986924.5110576,
+      "additional_info": {}
+    },
+    {
+      "config_id": 3,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": 1.6032675431779004,
+      "time": 83.17409300804138,
+      "cpu_time": 83.17258569999831,
+      "status": 1,
+      "starttime": 1764986924.5168514,
+      "endtime": 1764987007.6922026,
+      "additional_info": {}
+    },
+    {
+      "config_id": 4,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": 1.6037453561727817,
+      "time": 83.79196119308472,
+      "cpu_time": 83.77642480000213,
+      "status": 1,
+      "starttime": 1764987007.696324,
+      "endtime": 1764987091.4898171,
+      "additional_info": {}
+    },
+    {
+      "config_id": 5,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": Infinity,
+      "time": 0.0,
+      "cpu_time": 94344.4618623,
+      "status": 2,
+      "starttime": 1764987091.4947,
+      "endtime": 1764987091.5204716,
+      "additional_info": {
+        "traceback": "Traceback (most recent call last):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 190, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 264, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/home/williamxn/5003-Final-Project/src/hpo/smac3_hpo.py\", line 119, in train\n    return objective_function(params)\n  File \"/home/williamxn/5003-Final-Project/run_smac_hpo.py\", line 22, in objective\n    return super(NpEncoder, self).default(obj)\n  File \"/home/williamxn/5003-Final-Project/src/models/base_model.py\", line 121, in train_with_cv\n    model = self._fit(model, X_train, y_train, X_val, y_val)\n  File \"/home/williamxn/5003-Final-Project/src/models/svm_model.py\", line 46, in _fit\n    model.fit(X_train, y_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 395, in fit\n    self.calibrated_classifiers_ = parallel(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 63, in __call__\n    return super().__call__(iterable_with_config)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 1048, in __call__\n    if self.dispatch_one_batch(iterator):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 864, in dispatch_one_batch\n    self._dispatch(tasks)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 782, in _dispatch\n    job = self._backend.apply_async(batch, callback=cb)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 208, in apply_async\n    result = ImmediateResult(func)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 572, in __init__\n    self.results = batch()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in __call__\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in <listcomp>\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 123, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 577, in _fit_classifier_calibrator_pair\n    estimator.fit(X_train, y_train, **fit_params_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/svm/_base.py\", line 180, in fit\n    self._validate_params()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/base.py\", line 581, in _validate_params\n    validate_parameter_constraints(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/_param_validation.py\", line 97, in validate_parameter_constraints\n    raise InvalidParameterError(\nsklearn.utils._param_validation.InvalidParameterError: The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\n",
+        "error": "InvalidParameterError(\"The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\")"
+      }
+    },
+    {
+      "config_id": 6,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": Infinity,
+      "time": 0.0,
+      "cpu_time": 94344.4875849,
+      "status": 2,
+      "starttime": 1764987091.5271595,
+      "endtime": 1764987091.5386796,
+      "additional_info": {
+        "traceback": "Traceback (most recent call last):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 190, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 264, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/home/williamxn/5003-Final-Project/src/hpo/smac3_hpo.py\", line 119, in train\n    return objective_function(params)\n  File \"/home/williamxn/5003-Final-Project/run_smac_hpo.py\", line 22, in objective\n    return super(NpEncoder, self).default(obj)\n  File \"/home/williamxn/5003-Final-Project/src/models/base_model.py\", line 121, in train_with_cv\n    model = self._fit(model, X_train, y_train, X_val, y_val)\n  File \"/home/williamxn/5003-Final-Project/src/models/svm_model.py\", line 46, in _fit\n    model.fit(X_train, y_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 395, in fit\n    self.calibrated_classifiers_ = parallel(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 63, in __call__\n    return super().__call__(iterable_with_config)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 1048, in __call__\n    if self.dispatch_one_batch(iterator):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 864, in dispatch_one_batch\n    self._dispatch(tasks)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 782, in _dispatch\n    job = self._backend.apply_async(batch, callback=cb)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 208, in apply_async\n    result = ImmediateResult(func)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 572, in __init__\n    self.results = batch()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in __call__\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in <listcomp>\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 123, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 577, in _fit_classifier_calibrator_pair\n    estimator.fit(X_train, y_train, **fit_params_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/svm/_base.py\", line 180, in fit\n    self._validate_params()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/base.py\", line 581, in _validate_params\n    validate_parameter_constraints(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/_param_validation.py\", line 97, in validate_parameter_constraints\n    raise InvalidParameterError(\nsklearn.utils._param_validation.InvalidParameterError: The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\n",
+        "error": "InvalidParameterError(\"The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\")"
+      }
+    },
+    {
+      "config_id": 7,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": 1.5218958076326201,
+      "time": 89.11175489425659,
+      "cpu_time": 89.07947250000143,
+      "status": 1,
+      "starttime": 1764987091.5437052,
+      "endtime": 1764987180.6565118,
+      "additional_info": {}
+    },
+    {
+      "config_id": 8,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": Infinity,
+      "time": 0.0,
+      "cpu_time": 94433.5866782,
+      "status": 2,
+      "starttime": 1764987180.6591592,
+      "endtime": 1764987180.6653707,
+      "additional_info": {
+        "traceback": "Traceback (most recent call last):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 190, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 264, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/home/williamxn/5003-Final-Project/src/hpo/smac3_hpo.py\", line 119, in train\n    for k, v in params.items():\n  File \"/home/williamxn/5003-Final-Project/run_smac_hpo.py\", line 22, in objective\n    return super(NpEncoder, self).default(obj)\n  File \"/home/williamxn/5003-Final-Project/src/models/base_model.py\", line 121, in train_with_cv\n    model = self._fit(model, X_train, y_train, X_val, y_val)\n  File \"/home/williamxn/5003-Final-Project/src/models/svm_model.py\", line 46, in _fit\n    model.fit(X_train, y_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 395, in fit\n    self.calibrated_classifiers_ = parallel(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 63, in __call__\n    return super().__call__(iterable_with_config)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 1048, in __call__\n    if self.dispatch_one_batch(iterator):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 864, in dispatch_one_batch\n    self._dispatch(tasks)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 782, in _dispatch\n    job = self._backend.apply_async(batch, callback=cb)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 208, in apply_async\n    result = ImmediateResult(func)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 572, in __init__\n    self.results = batch()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in __call__\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in <listcomp>\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 123, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 577, in _fit_classifier_calibrator_pair\n    estimator.fit(X_train, y_train, **fit_params_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/svm/_base.py\", line 180, in fit\n    self._validate_params()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/base.py\", line 581, in _validate_params\n    validate_parameter_constraints(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/_param_validation.py\", line 97, in validate_parameter_constraints\n    raise InvalidParameterError(\nsklearn.utils._param_validation.InvalidParameterError: The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\n",
+        "error": "InvalidParameterError(\"The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\")"
+      }
+    },
+    {
+      "config_id": 9,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 222.2222222222222,
+      "cost": Infinity,
+      "time": 0.0,
+      "cpu_time": 94433.5953604,
+      "status": 2,
+      "starttime": 1764987180.6677306,
+      "endtime": 1764987180.6735487,
+      "additional_info": {
+        "traceback": "Traceback (most recent call last):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 190, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 264, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/home/williamxn/5003-Final-Project/src/hpo/smac3_hpo.py\", line 119, in train\n    for k, v in params.items():\n  File \"/home/williamxn/5003-Final-Project/run_smac_hpo.py\", line 22, in objective\n    return super(NpEncoder, self).default(obj)\n  File \"/home/williamxn/5003-Final-Project/src/models/base_model.py\", line 121, in train_with_cv\n    model = self._fit(model, X_train, y_train, X_val, y_val)\n  File \"/home/williamxn/5003-Final-Project/src/models/svm_model.py\", line 46, in _fit\n    model.fit(X_train, y_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 395, in fit\n    self.calibrated_classifiers_ = parallel(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 63, in __call__\n    return super().__call__(iterable_with_config)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 1048, in __call__\n    if self.dispatch_one_batch(iterator):\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 864, in dispatch_one_batch\n    self._dispatch(tasks)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 782, in _dispatch\n    job = self._backend.apply_async(batch, callback=cb)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 208, in apply_async\n    result = ImmediateResult(func)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/_parallel_backends.py\", line 572, in __init__\n    self.results = batch()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in __call__\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/joblib/parallel.py\", line 263, in <listcomp>\n    return [func(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/parallel.py\", line 123, in __call__\n    return self.function(*args, **kwargs)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/calibration.py\", line 577, in _fit_classifier_calibrator_pair\n    estimator.fit(X_train, y_train, **fit_params_train)\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/svm/_base.py\", line 180, in fit\n    self._validate_params()\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/base.py\", line 581, in _validate_params\n    validate_parameter_constraints(\n  File \"/home/williamxn/anaconda3/lib/python3.10/site-packages/sklearn/utils/_param_validation.py\", line 97, in validate_parameter_constraints\n    raise InvalidParameterError(\nsklearn.utils._param_validation.InvalidParameterError: The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\n",
+        "error": "InvalidParameterError(\"The 'class_weight' parameter of SVC must be a str among {'balanced'}, an instance of 'dict' or None. Got 'None' instead.\")"
+      }
+    },
+    {
+      "config_id": 7,
+      "instance": null,
+      "seed": 1608637542,
+      "budget": 666.6666666666666,
+      "cost": 2147483647.0,
+      "time": 0.0,
+      "cpu_time": 0.0,
+      "status": 0,
+      "starttime": 0.0,
+      "endtime": 0.0,
+      "additional_info": {}
+    }
+  ],
+  "configs": {
+    "1": {
+      "C": 0.0745934328573,
+      "class_weight": "balanced",
+      "degree": 2,
+      "gamma": 0.000126742559,
+      "kernel": "rbf"
+    },
+    "2": {
+      "C": 56.6984951147884,
+      "class_weight": "balanced",
+      "degree": 5,
+      "gamma": 7.0721141314722,
+      "kernel": "rbf"
+    },
+    "3": {
+      "C": 4.5705630998015,
+      "class_weight": "balanced",
+      "degree": 5,
+      "gamma": 1.4528246637516,
+      "kernel": "linear"
+    },
+    "4": {
+      "C": 0.9846738873615,
+      "class_weight": "balanced",
+      "degree": 5,
+      "gamma": 0.001152644954,
+      "kernel": "linear"
+    },
+    "5": {
+      "C": 0.0060268891287,
+      "class_weight": "None",
+      "degree": 4,
+      "gamma": 0.0008111941985,
+      "kernel": "rbf"
+    },
+    "6": {
+      "C": 0.1444525102276,
+      "class_weight": "None",
+      "degree": 3,
+      "gamma": 0.0916374180878,
+      "kernel": "rbf"
+    },
+    "7": {
+      "C": 0.028585493942,
+      "class_weight": "balanced",
+      "degree": 4,
+      "gamma": 0.0001707072883,
+      "kernel": "linear"
+    },
+    "8": {
+      "C": 1.1462107403425,
+      "class_weight": "None",
+      "degree": 5,
+      "gamma": 0.1090747583516,
+      "kernel": "linear"
+    },
+    "9": {
+      "C": 0.0049827523571,
+      "class_weight": "None",
+      "degree": 4,
+      "gamma": 0.0007122305833,
+      "kernel": "linear"
+    }
+  },
+  "config_origins": {
+    "1": "Initial Design: Random",
+    "2": "Initial Design: Random",
+    "3": "Initial Design: Random",
+    "4": "Initial Design: Random",
+    "5": "Initial Design: Random",
+    "6": "Initial Design: Random",
+    "7": "Initial Design: Random",
+    "8": "Initial Design: Random",
+    "9": "Initial Design: Random"
+  }
+}

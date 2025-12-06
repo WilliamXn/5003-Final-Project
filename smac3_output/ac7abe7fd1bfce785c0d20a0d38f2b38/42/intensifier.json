@@ -1,0 +1,184 @@
+{
+  "incumbent_ids": [
+    18
+  ],
+  "rejected_config_ids": [
+    2,
+    1,
+    4,
+    5,
+    6,
+    3,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    7,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "incumbents_changed": 6,
+  "trajectory": [
+    {
+      "config_ids": [
+        1
+      ],
+      "costs": [
+        1.732319480848067
+      ],
+      "trial": 1,
+      "walltime": 192.36961221694946
+    },
+    {
+      "config_ids": [
+        3
+      ],
+      "costs": [
+        1.6032675431779004
+      ],
+      "trial": 3,
+      "walltime": 527.3479478359222
+    },
+    {
+      "config_ids": [
+        7
+      ],
+      "costs": [
+        1.5218958076326201
+      ],
+      "trial": 7,
+      "walltime": 1175.153166294098
+    },
+    {
+      "config_ids": [
+        9
+      ],
+      "costs": [
+        1.4519573526332272
+      ],
+      "trial": 9,
+      "walltime": 1374.9600579738617
+    },
+    {
+      "config_ids": [
+        7
+      ],
+      "costs": [
+        1.4187786596972012
+      ],
+      "trial": 11,
+      "walltime": 1613.316768169403
+    },
+    {
+      "config_ids": [
+        18
+      ],
+      "costs": [
+        1.4072292249102216
+      ],
+      "trial": 23,
+      "walltime": 3426.078710794449
+    }
+  ],
+  "state": {
+    "tracker": {
+      "0,0": [
+        [
+          0,
+          [
+            {
+              "C": 0.0534258397834,
+              "class_weight": "None",
+              "degree": 2,
+              "gamma": 0.1459632941889,
+              "kernel": "rbf"
+            },
+            {
+              "C": 0.0043851407999,
+              "class_weight": "None",
+              "degree": 2,
+              "gamma": 0.0091517654694,
+              "kernel": "rbf"
+            },
+            {
+              "C": 1.9353025869937,
+              "class_weight": "balanced",
+              "degree": 3,
+              "gamma": 0.0010974784254,
+              "kernel": "linear"
+            },
+            {
+              "C": 1.5002159321915,
+              "class_weight": "balanced",
+              "degree": 3,
+              "gamma": 0.001825419212,
+              "kernel": "linear"
+            },
+            {
+              "C": 0.0833075632971,
+              "class_weight": "None",
+              "degree": 2,
+              "gamma": 0.0004941156164,
+              "kernel": "rbf"
+            },
+            {
+              "C": 6.2615746137056,
+              "class_weight": "balanced",
+              "degree": 3,
+              "gamma": 0.0046083402237,
+              "kernel": "linear"
+            },
+            {
+              "C": 1.735238626886,
+              "class_weight": "balanced",
+              "degree": 3,
+              "gamma": 0.0026097981933,
+              "kernel": "linear"
+            },
+            {
+              "C": 51.9157176344239,
+              "class_weight": "balanced",
+              "degree": 5,
+              "gamma": 0.0401585204294,
+              "kernel": "rbf"
+            },
+            {
+              "C": 18.4344405256416,
+              "class_weight": "balanced",
+              "degree": 3,
+              "gamma": 0.0060274444443,
+              "kernel": "linear"
+            }
+          ]
+        ]
+      ]
+    },
+    "next_bracket": 1
+  }
+}

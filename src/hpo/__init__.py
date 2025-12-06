@@ -3,6 +3,7 @@ from .random_search import RandomSearch
 from .grid_search import GridSearch
 from .tpe_optuna import TPEOptuna
 from .smac_optimizer import SMACOptimizer
+from .smac3_hpo import SMAC3HyperbandOptimizer
 
 # HPO算法注册表
 # 队友完成各自的算法后，在这里注册即可自动生效
@@ -10,7 +11,8 @@ AVAILABLE_ALGORITHMS = {
     'random': RandomSearch,      # A同学 - 已完成
     'grid': GridSearch,          # B同学 - 待完成
     'tpe': TPEOptuna,            # C同学 - 待完成
-    'smac': SMACOptimizer,       # D同学 - 待完成
+    'smac': SMACOptimizer,       # D同学 - 待完成 (OpenBox)
+    'smac3': SMAC3HyperbandOptimizer, # SMAC3 Hyperband
 }
 
 
@@ -47,7 +49,8 @@ __all__ = [
     'GridSearch',
     'TPEOptuna',
     'SMACOptimizer',
-    'get_hpo_algorithm', 
+    'SMAC3HyperbandOptimizer',
+    'get_hpo_algorithm',  
     'list_algorithms', 
     'AVAILABLE_ALGORITHMS'
 ]

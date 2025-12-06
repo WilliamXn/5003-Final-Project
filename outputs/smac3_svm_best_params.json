@@ -1,0 +1,8 @@
+{
+    "C": 9.1826677661087,
+    "class_weight": "None",
+    "degree": 2,
+    "gamma": 0.0007956217014,
+    "kernel": "rbf",
+    "max_iter": 2000
+}
